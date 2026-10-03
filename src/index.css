@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  background: #e8f1fb;
+  font-family: system-ui, sans-serif;
+  color: #1d3557;
+}
+
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.form input {
+  padding: 0.7rem 1rem;
+  border: 2px solid #bcd4ee;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #457b9d;
+}
+
+.pass {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(29, 53, 87, 0.15);
+  overflow: hidden;
+  text-align: left;
+}
+
+.pass-header {
+  background: #457b9d;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.pass-body {
+  padding: 1.2rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field small {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #7a8ba3;
+}
+
+.field strong {
+  font-size: 1.3rem;
+}
+
+.route {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #457b9d;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 0;
+  padding-top: 1rem;
+  border-top: 2px dashed #bcd4ee;
+}
+
+.details .field:last-child strong {
+  font-size: 1.8rem;
+  color: #e63946;
+}
+
+button {
+  background: #457b9d;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d3557;
+}
+
+.details .field:last-child strong {
+  text-transform: uppercase;
+}
+
+@media print {
+  .form,
+  h1 {
+    display: none;
+  }
+
+  body {
+    background: white;
+  }
+}
